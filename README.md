@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version is "ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]"
 
-Things you may want to cover:
+Rails version is "5.2.2.1"
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To streamline running the app, it is best run in AWS Cloud9.
