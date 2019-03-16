@@ -4,7 +4,7 @@
 #nav_container {
     background-color: #ffffff;
     width: 100%;
-    border-bottom: 1px solid #a5a5a5;
+    border-bottom: 1px solid #7e7e7e;
     font-family: Verdana;
     
     > div#logo {
@@ -30,7 +30,17 @@
 .body_index {
     margin: 0;
     display: flex;
-    background-color: #e0e8f2;
+    background-color: #ffffff;
     flex-direction: column;
+    div.content{
+        
+        > .handshake {
+        object-fit: cover;
+        object-position: -20% 40%;
+        height: 400px;
+        width: 100%;
+        border-bottom: 1px solid #7e7e7e;
+        }
+    }
 
 }
