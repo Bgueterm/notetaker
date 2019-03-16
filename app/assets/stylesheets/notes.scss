@@ -6,7 +6,8 @@
     width: 100%;
     border-bottom: 1px solid #7e7e7e;
     font-family: Verdana;
-    
+    filter: drop-shadow(0 0 0.55rem #7e7e7e);
+    z-index: 2;
     > div#logo {
         float: left;
         margin-top: 2px;
@@ -32,14 +33,50 @@
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
-    div.content{
-        
+    div.image_container{
+        > .usage {
+            position: absolute;
+            z-index: 1;
+            
+            font-family: Verdana;
+            font-size: 20px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 1.2px 1.2px 8px black;
+            
+            top: 260px;
+            left: 50%;
+            width: 80%;
+            transform: translate(-50%, -50%);
+            > p {
+                margin: 0;
+            }
+        }
         > .handshake {
         object-fit: cover;
         object-position: -20% 40%;
+
+        z-index: 0;
+        position: relative;
         height: 400px;
         width: 100%;
         border-bottom: 1px solid #7e7e7e;
+        }
+        
+        > .usage:after {
+            z-index: -1;
+            opacity: 0.15;
+            filter: drop-shadow(0 0 0.85rem white);
+            background: black;
+            border-radius: 2px;
+            width: 125%;
+            height: 200px;
+            content: "";
+            position: fixed;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+   
         }
     }
 
