@@ -1,3 +1,36 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#nav_container {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #a5a5a5;
+    font-family: Verdana;
+    
+    > div#logo {
+        float: left;
+        margin-top: 2px;
+        padding: 6px;
+    }
+    
+    > h4#creator_id {
+        margin: 0;
+        padding-top: 14px;
+        text-align: right;
+        color: #a5a5a5;
+        padding-right: 20px;
+        float: right;
+        
+        > p {
+            margin: 0;
+        }
+    }
+}
+
+.body_index {
+    margin: 0;
+    display: flex;
+    background-color: #e0e8f2;
+    flex-direction: column;
+
+}
