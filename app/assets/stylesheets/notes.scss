@@ -1,13 +1,14 @@
-// Place all the styles related to the Notes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-#nav_container {
+
+#nav_header {
+    position: fixed;
+    top: 0;
     background-color: #ffffff;
     width: 100%;
-    border-bottom: 1px solid #7e7e7e;
+    border-bottom: 4px solid #231f20;
     font-family: Verdana;
     filter: drop-shadow(0 0 0.55rem #7e7e7e);
     z-index: 2;
+    
     > div#logo {
         float: left;
         margin-top: 2px;
@@ -18,7 +19,7 @@
         margin: 0;
         padding-top: 14px;
         text-align: right;
-        color: #a5a5a5;
+        color: #b4b4b4;
         padding-right: 20px;
         float: right;
         
@@ -28,11 +29,19 @@
     }
 }
 
+#nav_footer {
+    margin-top: 50px;
+    height: 225px;
+    border-top: 2px solid #231f20;
+    background-color: #373536;
+}
+
 .body_index {
     margin: 0;
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
+    margin-top: 73px;
     div.image_container{
         > .usage {
             position: absolute;
@@ -42,11 +51,12 @@
             font-size: 20px;
             text-align: center;
             color: #ffffff;
-            text-shadow: 1.2px 1.2px 8px black;
+            text-shadow: 1px 1px 10px black;
             
             top: 260px;
             left: 50%;
             width: 80%;
+            
             transform: translate(-50%, -50%);
             > p {
                 margin: 0;
@@ -66,18 +76,88 @@
         > .usage:after {
             z-index: -1;
             opacity: 0.15;
-            filter: drop-shadow(0 0 0.85rem white);
             background: black;
-            border-radius: 2px;
-            width: 125%;
-            height: 200px;
-            content: "";
             position: fixed;
+            
             top: 58%;
             left: 50%;
+            width: 125%;
+            height: 200px;
+            
+            content: "";
+            filter: drop-shadow(0 0 0.85rem white);
             transform: translate(-50%, -50%);
-   
         }
     }
+    #notes_container {
+        padding-top: 25px;
+        padding-bottom: 35px;
+        textarea {
+            width: 772px;
+            height: 200px;
+            padding: 12px 12px;
+            border: 2px solid #b4b4b4;
+            border-bottom: 0px solid white;
+            background-color: #f9f9f9;
+            resize: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > input[type =button], input[type =submit] {
+            width: 800px;
+            height: 40px;
+            background-color: #589da3;
+            border: 2px solid #589da3;
+            color: white;
+            font-family: Verdana;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    #notes_list {
 
+        > .note_info{
+            margin-top: -5px;
+            > .upper_box {
+                width: 772px;
+                height: 10px;
+                padding: 12px 12px;
+                padding-top: 5px;
+                border: 2px solid #b4b4b4;
+                border-bottom: 1px solid #b4b4b4;
+                background-color: #e4e4e4;
+                resize: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+                .id {
+                    display: block;
+                    float: left;
+                }
+                .date {
+                    display: block;
+                    float: right;
+                }
+            }
+            .text {
+                width: 772px;
+                height: 200px;
+                padding: 12px 12px;
+                border-left: 2px solid #b4b4b4;
+                border-right: 2px solid #b4b4b4;
+                border-bottom: 2px solid #b4b4b4;
+                background-color: #f9f9f9;
+                resize: none;
+                display: block;
+                margin-top: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }

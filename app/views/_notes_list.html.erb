@@ -1,0 +1,11 @@
+<div id = "notes_list">
+    <% @note.reverse_each do |note| %>
+        <div class = "note_info">
+            <div class = "upper_box">
+                <section class = "id"  >Post: <%= note.id %></section>
+                <section class = "date"><%= note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+            </div>
+            <p class = "text"><%= note.text %></p>
+        </div>
+    <% end %>   
+</div>
