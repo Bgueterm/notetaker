@@ -7947,3 +7947,755 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:31:21 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (384.6ms)
+  Rendered _image_container.html.erb (1.8ms)
+  Rendered _notes_container.html.erb (2.5ms)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (7.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (400.9ms)
+Completed 200 OK in 487ms (Views: 478.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:31:51 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 162ms (Views: 160.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:32:01 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (4.2ms)
+  Rendered _image_container.html.erb (2.8ms)
+  Rendered _notes_container.html.erb (1.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (4.7ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 166ms (Views: 164.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:32:09 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.2ms)
+  Rendered _image_container.html.erb (1.7ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:32:24 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:32:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.7ms)
+  Rendered _image_container.html.erb (1.7ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 130ms (Views: 128.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:32:46 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 111ms (Views: 108.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:33:07 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.1ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 105ms (Views: 104.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:33:32 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:33:55 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:34:13 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.4ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:36:33 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 136ms (Views: 134.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:01 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:21 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:46 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:53 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 129ms (Views: 128.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:37:58 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.4ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:38:12 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:38:17 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:38:23 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.5ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:38:30 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:38:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (5.2ms)
+  Rendered _image_container.html.erb (1.9ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 137ms (Views: 135.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:39:30 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:39:44 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 109ms (Views: 107.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:40:10 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:40:18 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:40:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:40:46 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 137ms (Views: 134.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:41:12 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:41:18 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.5ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:41:25 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 115ms (Views: 112.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:41:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.3ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 128ms (Views: 125.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:42:23 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 112ms (Views: 111.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:42:35 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:42:45 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:42:52 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 119ms (Views: 117.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:04 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.1ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 128ms (Views: 127.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:10 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:16 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.4ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 124ms (Views: 123.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:22 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 119ms (Views: 114.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.3ms)
+  Rendered notes/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 133ms (Views: 131.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:43:50 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:44:10 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.3ms)
+  Rendered _image_container.html.erb (3.9ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.1ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 120ms (Views: 119.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:44:19 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.5ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 142ms (Views: 141.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:44:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:44:48 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:45:00 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.73.151.139 at 2019-03-18 19:45:43 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.4ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.8ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (0.2ms)
+  Rendered notes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.2ms)
+
+
