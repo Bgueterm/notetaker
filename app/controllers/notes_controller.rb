@@ -2,10 +2,7 @@ class NotesController < ApplicationController
   def index
     @note = Note.all
   end
-  
-  def new
-  end
-  
+
   def create
     @note = Note.new(note_params)
     @note.save
