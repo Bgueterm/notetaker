@@ -4,6 +4,11 @@
             <div class = "upper_box">
                 <section class = "id"  >Post: <%= note.id %></section>
                 <section class = "date"><%= note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                <script>
+                    if (note.updated_at > note.created_at) {
+                        <section class = "edit">Edited: <%= note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                    }
+                </script>
             </div>
             <p class = "text"><%= note.text %></p>
         </div>

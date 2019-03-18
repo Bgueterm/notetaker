@@ -91,7 +91,7 @@
     }
     #notes_container {
         padding-top: 25px;
-        padding-bottom: 35px;
+        padding-bottom: 45px;
         textarea {
             width: 772px;
             height: 200px;
@@ -121,11 +121,13 @@
     #notes_list {
 
         > .note_info{
-            margin-top: -5px;
+            margin-top: -18px;
+            font-family: Verdana;
+
             > .upper_box {
                 width: 772px;
                 height: 10px;
-                padding: 12px 12px;
+                padding: 15px 12px;
                 padding-top: 5px;
                 border: 2px solid #b4b4b4;
                 border-bottom: 1px solid #b4b4b4;
@@ -140,6 +142,10 @@
                     float: left;
                 }
                 .date {
+                    display: block;
+                    float: right;
+                }
+                .edit {
                     display: block;
                     float: right;
                 }

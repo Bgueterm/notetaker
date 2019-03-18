@@ -8,6 +8,18 @@ class NotesController < ApplicationController
     @note.save
     redirect_to action: "index"
   end
+  
+  def edit
+  end
+
+  def update
+  end
+  
+  def destroy
+    @note = Note.find(params[:id])
+    @note.destroy
+    redirect_to action: "index"
+  end
 end
 
 private
