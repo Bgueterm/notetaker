@@ -202,10 +202,10 @@
                 margin-top: 40px;
                 margin-bottom: -42px;
                 font-family: Verdana;
-
+                
                 >.upper_box {
                     width: 772px;
-                    height: 10px;
+                    height: 11px;
                     padding: 15px 12px;
                     padding-top: 5px;
                     border: 2px solid #b4b4b4;
@@ -221,7 +221,7 @@
                         float: left;
                     }
                     .date {
-                        margin-left: 330px;
+                        margin-left: 360px;
                         display: block;
                         float: left;
                     }
@@ -231,10 +231,12 @@
                         border: none;
                         display: block;
                         float: right;
-                        height: 20px;
-                        width: 70px;
-                        margin-left: 12px;
+                        height: 21px;
+                        width: 66px;
+                        margin-left: 2px;
                         cursor: pointer;
+                        font-family: Verdana;
+                        font-size: 0.85em;
                         transition-duration: 0.3s;
                     }
                     >.update input:hover[type="submit"] {
@@ -259,6 +261,7 @@
                     margin-top: 0;
                     margin-left: auto;
                     margin-right: auto;
+                    font-weight: lighter;
                 }
             }
         }
