@@ -1,17 +1,20 @@
 #nav_header {
     position: fixed;
     top: 0;
+    height: 70px;
+    min-width: 500px;
     background-color: #ffffff;
     width: 100%;
     border-bottom: 4px solid #231f20;
     font-family: Verdana;
     filter: drop-shadow(0 0 0.45rem #3d3d3d);
     z-index: 1000;
-
     >div#logo {
         float: left;
         margin-top: 2px;
         padding: 11px;
+        display: block;
+        position: absolute;
     }
 
     >h4#creator_id {
@@ -21,7 +24,9 @@
         color: #b4b4b4;
         padding-right: 20px;
         float: right;
-
+        display: block;
+        position: relative;
+        white-space: nowrap;
         >p {
             margin: 0;
         }
@@ -29,7 +34,7 @@
 }
 
 #nav_footer {
-
+    min-width: 800px;
     height: 325px;
     border-top: 2px solid #231f20;
     background-color: #373536;
@@ -43,36 +48,41 @@
     }
 
     >div#learn_more {
+        white-space: nowrap;
+        display: block;
+        float: right;
         >div#contact_info {
             margin-top: 100px;
-            margin-left: 650px;
-            display: block;
-            position: absolute;
+            margin-right: 88px;
+            float: right;
         }
         >div#visit_k {
             margin-top: 100px;
-            margin-left: 850px;
-            display: block;
-            position: absolute;
+            margin-right: 157px;
+            float: right;
         }
+    }
+    >div#company_logos {
+        
         >div#logo {
-            position: absolute;
             display: block;
+            float: right;
             margin-top: 160px;
-            margin-left: 845px;
+            margin-right: -345px;
         }
         >div#linkedin {
-            position: absolute;
             display: block;
+            float: right;
             margin-top: 153px;
-            margin-left: 710px;
+            margin-right: -110px;
         }
         >div#github {
-            position: absolute;
             display: block;
+            float: right;
             margin-top: 148px;
-            margin-left: 642px;
+            margin-right: -53px;
         }
+
     }
 
     >h4 {
@@ -91,7 +101,7 @@
     background-color: #373536;
     flex-direction: column;
     margin-top: 73px;
-
+    
     div.image_container {
         >.usage {
             z-index: 1;
@@ -101,7 +111,8 @@
             text-align: center;
             color: #ffffff;
             text-shadow: 1px 1px 10px black;
-
+            min-width: 700px;
+            white-space: nowrap;
             top: 255px;
             left: 50%;
             width: 80%;
@@ -119,7 +130,7 @@
             position: fixed;
             height: 400px;
             width: 100%;
-
+            min-width: 900px;
         }
 
         >.usage:after {
