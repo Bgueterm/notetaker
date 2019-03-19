@@ -2,7 +2,7 @@
     <%= form_for :notes, url: notes_path do |f| %>
         <p>
             <%= f.text_area :text, placeholder: "Click here to type a new note..." %>
-            <%= f.submit :submit %>
+            <%= f.submit :submit, :class => "submit_button" %>
         </p>
     <% end %>
 </div>

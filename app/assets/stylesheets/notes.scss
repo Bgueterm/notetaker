@@ -82,7 +82,6 @@
             margin-top: 148px;
             margin-right: -53px;
         }
-
     }
 
     >h4 {
@@ -91,9 +90,6 @@
         margin-top: 275px;
     }
 }
-
-
-
 
 .body_index {
     margin: 0;
@@ -178,7 +174,6 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            >input[type=button],
             input[type=submit] {
                 width: 800px;
                 height: 40px;
@@ -191,6 +186,13 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                transition-duration: 0.3s;
+
+            }
+            input:hover[type="submit"] {
+                background-color: #3fadb7;
+                border: 2px solid #3fadb7;
+                transition-duration: 0.3s;
             }
         }
         #notes_list {
@@ -223,7 +225,6 @@
                         display: block;
                         float: left;
                     }
-                    input[type=button],
                     input[type=submit] {
                         background-color: white;
                         color: black;
@@ -234,9 +235,15 @@
                         width: 70px;
                         margin-left: 12px;
                         cursor: pointer;
+                        transition-duration: 0.3s;
                     }
-                    .button_to:hover {
-                        color: white;
+                    >.update input:hover[type="submit"] {
+                        background-color: #edc663;
+                        transition-duration: 0.3s;
+                    }
+                    >.delete input:hover[type="submit"] {
+                        background-color: #f0847b;
+                        transition-duration: 0.3s;
                     }
                 }
                 .text {
