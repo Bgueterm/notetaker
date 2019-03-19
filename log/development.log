@@ -20611,3 +20611,765 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 165ms (Views: 163.3ms | ActiveRecord: 0.1ms)
 
 
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:48:08 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BjDntJIrxg0wfSogWfalHDWhkWohYam7F9PuyTttm3NNJgRSXEbOSaDCS5CclCMya8qKN5zw/R9PiMget798Kw==", "notes"=>{"text"=>"Here is an example of a post on this note taking app.\r\n\r\nGroceries to remember:\r\n- milk\r\n- eggs\r\n- salt\r\n- cheese\r\n- soup\r\n"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Here is an example of a post on this note taking app.\r\n\r\nGroceries to remember:\r\n- milk\r\n- eggs\r\n- salt\r\n- cheese\r\n- soup\r\n"], ["created_at", "2019-03-19 04:48:08.431240"], ["updated_at", "2019-03-19 04:48:08.431240"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 40ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:48:08 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (267.1ms)
+  Rendered _image_container.html.erb (1.8ms)
+  Rendered _notes_container.html.erb (2.2ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.0ms)
+  Rendered _footer.html.erb (6.5ms)
+  Rendered notes/index.html.erb within layouts/application (286.2ms)
+Completed 200 OK in 375ms (Views: 373.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:51:25 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (6.9ms)
+  Rendered _footer.html.erb (5.8ms)
+  Rendered notes/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:51:39 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApMYSXbUOEyB3kaZiOrLn/rI8SBjGzpkCYF1FpQ3sBdtJITDzetE93dB7cyvh7nH64AOWtKqlDMpu9jKgY3rfQ==", "notes"=>{"text"=>"Going to try again\r\nHere's a list: \r\n-test\r\n-test"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Going to try again\r\nHere's a list: \r\n-test\r\n-test"], ["created_at", "2019-03-19 04:51:40.001131"], ["updated_at", "2019-03-19 04:51:40.001131"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 13ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:51:40 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.8ms)
+  Rendered _image_container.html.erb (2.2ms)
+  Rendered _notes_container.html.erb (1.0ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.4ms)
+  Rendered _footer.html.erb (8.1ms)
+  Rendered notes/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:53:45 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (4.2ms)
+  Rendered _image_container.html.erb (2.7ms)
+  Rendered _notes_container.html.erb (1.1ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (10.1ms)
+  Rendered _footer.html.erb (6.4ms)
+  Rendered notes/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:53:50 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHJhZ+K5aQ3kAbxpvnf0WT4lxMH3rHtPOsA79lvX0SvPZIKBLNRhSXS+3dl7FXJ3YE7fnEo9L+timx0h1wU2cw==", "notes"=>{"text"=>"awgeawegaweg\r\n\r\nag\r\nag\r\n\r\nagage"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `simple_format' for #<NotesController:0x00007f6f18461778>):
+  
+app/controllers/notes_controller.rb:12:in `create'
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:54:08 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHJhZ+K5aQ3kAbxpvnf0WT4lxMH3rHtPOsA79lvX0SvPZIKBLNRhSXS+3dl7FXJ3YE7fnEo9L+timx0h1wU2cw==", "notes"=>{"text"=>"awgeawegaweg\r\n\r\nag\r\nag\r\n\r\nagage"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "awgeawegaweg\r\n\r\nag\r\nag\r\n\r\nagage"], ["created_at", "2019-03-19 04:54:08.251980"], ["updated_at", "2019-03-19 04:54:08.251980"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 18ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:54:08 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.3ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.8ms)
+  Rendered _footer.html.erb (5.8ms)
+  Rendered notes/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 04:55:36 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.5ms)
+  Rendered _image_container.html.erb (2.5ms)
+  Rendered _notes_container.html.erb (1.2ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (10.5ms)
+  Rendered _footer.html.erb (7.1ms)
+  Rendered notes/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:55:41 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPav6rWB4eL0/xgkfNBtJJ6yXar2NyFTXE+aHPU1vP0P4EwMe+zppmRAeZS5susKwNlG90umdfcEFLzLeedbpQ==", "notes"=>{"text"=>"weageawgaeg\r\ngea\r\neg\r\na"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `simple_format' for #<NotesController:0x00007f6f199fc1c8>):
+  
+app/controllers/notes_controller.rb:12:in `create'
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 04:56:02 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPav6rWB4eL0/xgkfNBtJJ6yXar2NyFTXE+aHPU1vP0P4EwMe+zppmRAeZS5susKwNlG90umdfcEFLzLeedbpQ==", "notes"=>{"text"=>"weageawgaeg\r\ngea\r\neg\r\na"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `text' for #<NotesController:0x00007f6f18a19300>
+Did you mean?  test):
+  
+app/controllers/notes_controller.rb:12:in `create'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:01:22 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.5ms)
+  Rendered notes/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/App/notetaker/app/views/_notes_container.html.erb:4: syntax error, unexpected ':', expecting ')'
+...=( simple_format(f.text_area) :text, placeholder: "Click her...
+...                              ^):
+  
+app/views/_notes_container.html.erb:4: syntax error, unexpected ':', expecting ')'
+app/views/notes/index.html.erb:7:in `_app_views_notes_index_html_erb___1431343860038349248_32205580'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:01:29 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (3.2ms)
+  Rendered _image_container.html.erb (2.4ms)
+  Rendered _notes_container.html.erb (1.8ms)
+  Rendered notes/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/App/notetaker/app/views/_notes_container.html.erb:4: syntax error, unexpected ',', expecting ')'
+...mple_format(f.text_area :text), placeholder: "Click here to ...
+...                              ^):
+  
+app/views/_notes_container.html.erb:4: syntax error, unexpected ',', expecting ')'
+app/views/notes/index.html.erb:7:in `_app_views_notes_index_html_erb___1431343860038349248_70057667906140'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:01:38 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (1.6ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (7.5ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:01:58 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.1ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (1.9ms)
+  Rendered notes/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `strip' for :text:Symbol):
+    1: <div id = "notes_container">
+    2:     <%= form_for :notes, url: notes_path do |f| %>
+    3:         <p>
+    4:             <%= f.text_area simple_format(:text), placeholder: "Click here to type a new note..." %>
+    5:             <%= f.submit :submit %>
+    6:         </p>
+    7:     <% end %>
+  
+app/views/_notes_container.html.erb:4:in `block in _app_views__notes_container_html_erb___3276690475934749184_70057396352060'
+app/views/_notes_container.html.erb:2:in `_app_views__notes_container_html_erb___3276690475934749184_70057396352060'
+app/views/notes/index.html.erb:7:in `_app_views_notes_index_html_erb___1431343860038349248_70057667994140'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:02:11 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (1.8ms)
+  Rendered notes/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `strip' for :text:Symbol):
+    1: <div id = "notes_container">
+    2:     <%= form_for :notes, url: notes_path do |f| %>
+    3:         <p>
+    4:             <%= f.text_area simple_format(:text), placeholder: "Click here to type a new note..." %>
+    5:             <%= f.submit :submit %>
+    6:         </p>
+    7:     <% end %>
+  
+app/views/_notes_container.html.erb:4:in `block in _app_views__notes_container_html_erb___3276690475934749184_70057573476200'
+app/views/_notes_container.html.erb:2:in `_app_views__notes_container_html_erb___3276690475934749184_70057573476200'
+app/views/notes/index.html.erb:7:in `_app_views_notes_index_html_erb___1431343860038349248_70057573332940'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:02:22 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.3ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/notes/5" for 172.73.151.139 at 2019-03-19 05:03:13 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yVENuf1W1XiFUTDNCJxvdbqlUnp8k/EEDm6mzd9FjliCR+5fMzvdPBXuUX3N/ulb5M5JJ8ECpaBWNYAaU5dpAA==", "id"=>"5"}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (1.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 17ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:03:13 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.1ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.6ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.8ms)
+  Rendered _footer.html.erb (5.6ms)
+  Rendered notes/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/notes/4" for 172.73.151.139 at 2019-03-19 05:03:16 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nJGrPINJ1A5Yt3AJjRoEQUXz4JRBQ1jfoxkpjCfmo9DXh0jaTSTcSsgIEblIeIJvG5j7yfzSDHv7Qg9bqzREiA==", "id"=>"4"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (0.9ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 13ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:03:16 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.5ms)
+  Rendered _footer.html.erb (5.4ms)
+  Rendered notes/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/notes/3" for 172.73.151.139 at 2019-03-19 05:03:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3V1P8wTpFpGIchqFGP/gnvKsfgFc1OdKOGlWVgJZBnyWS6wVyoQe1RjNezXdnWawrMdlXOFFs+5gMnCBjovhJA==", "id"=>"3"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (2.2ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 13ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:03:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.1ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (7.7ms)
+  Rendered _footer.html.erb (9.1ms)
+  Rendered notes/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:04:10 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.3ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (1.9ms)
+  Rendered _footer.html.erb (6.0ms)
+  Rendered notes/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 05:04:20 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"saTT4Ob+xXNAOoq/XctD6llGHGJizc1S+STCDURTcAPeE09qXcG5yLalIep6pjGySA7jGNN8YwXZHm/RUekraQ==", "notes"=>{"text"=>"Here's an example note!"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Here's an example note!"], ["created_at", "2019-03-19 05:04:20.327479"], ["updated_at", "2019-03-19 05:04:20.327479"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 13ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:04:20 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.1ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.4ms)
+  Rendered _footer.html.erb (5.6ms)
+  Rendered notes/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 05:04:26 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1AdJB+Z1q3AcNwnbzlr8ZOOeVwXfnMp8eF7bT7lryjifEarhKBijNIyIaGsLOHpKvfVMWGINntggBf2YNbktYA==", "notes"=>{"text"=>"And here's another! "}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (1.6ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "And here's another! "], ["created_at", "2019-03-19 05:04:26.775564"], ["updated_at", "2019-03-19 05:04:26.775564"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 11ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:04:26 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.7ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.8ms)
+  Rendered _footer.html.erb (5.8ms)
+  Rendered notes/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:14:37 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.5ms)
+  Rendered _footer.html.erb (5.9ms)
+  Rendered notes/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/notes" for 172.73.151.139 at 2019-03-19 05:14:46 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+bUHSSahIA4IlTXCnQa86cWRRIwLbnpKPeE4r66DnWiyo+Sv6MwoSpgqVHJYZDrHm/pf0bb/Lu5luh54IlF6MA==", "notes"=>{"text"=>"wagawegaweg"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[36mNote Create (1.1ms)[0m  [1m[32mINSERT INTO "notes" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "wagawegaweg"], ["created_at", "2019-03-19 05:14:46.658172"], ["updated_at", "2019-03-19 05:14:46.658172"]]
+  ↳ app/controllers/notes_controller.rb:12
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:12
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 11ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:14:46 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.4ms)
+  Rendered _footer.html.erb (5.6ms)
+  Rendered notes/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:16:56 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  Rendered _notes_list.html.erb (1.4ms)
+  Rendered notes/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/App/notetaker/app/views/_notes_list.html.erb:11: syntax error, unexpected '{', expecting then or ';' or '\n'
+...updated_at > note.created_at) {
+...                              ^
+/home/ec2-user/environment/App/notetaker/app/views/_notes_list.html.erb:12: syntax error, unexpected ':', expecting ')'
+...ection class = "update">Edited: <%= note.updated_at.strftime...
+...                              ^
+/home/ec2-user/environment/App/notetaker/app/views/_notes_list.html.erb:27: syntax error, unexpected end, expecting ')'
+'.freeze;     end    
+              ^~~
+/home/ec2-user/environment/App/notetaker/app/views/_notes_list.html.erb:31: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/App/notetaker/app/views/_notes_list.html.erb:33: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/_notes_list.html.erb:11: syntax error, unexpected '{', expecting then or ';' or '\n'
+app/views/_notes_list.html.erb:12: syntax error, unexpected ':', expecting ')'
+app/views/_notes_list.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/_notes_list.html.erb:31: syntax error, unexpected ensure, expecting ')'
+app/views/_notes_list.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/notes/index.html.erb:8:in `_app_views_notes_index_html_erb___1431343860038349248_32574220'
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:17:28 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.7ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:19:53 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.7ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/notes/8" for 172.73.151.139 at 2019-03-19 05:19:59 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"740EN4vYnjc7ViI1RS9AMzI/8D8rTjAosuGEBzBnMJukm+fRRbWWc6vpQ4WATcYdbFTrYpbfZIzquqLQvLXXww==", "id"=>"8"}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (1.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 12ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:19:59 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (3.2ms)
+  Rendered _footer.html.erb (5.8ms)
+  Rendered notes/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:21:01 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.5ms)
+  Rendered _image_container.html.erb (1.7ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (7.7ms)
+  Rendered _footer.html.erb (5.9ms)
+  Rendered notes/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/notes/7" for 172.73.151.139 at 2019-03-19 05:21:06 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gyd24q33HqpJXHdPs/8htY7ZI5I5oeZ397pFpsNNOpdQMZUEY5oW7tnjFv92naeb0LI4z4QwstOv4WNxT5/dzw==", "id"=>"7"}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (0.8ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+No template found for NotesController#destroy, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:21:15 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.3ms)
+  Rendered _image_container.html.erb (1.5ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (6.7ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/notes/6" for 172.73.151.139 at 2019-03-19 05:21:23 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q0v1U+yGysiYF4Qyjd6cgrrEEUv+GHq9nI+vd+gfdvkIXRa1IuvCjAio5YJIvBqs5K8KFkOJLhnE1ImgZM2RoQ==", "id"=>"6"}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[36mNote Destroy (1.0ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/notes_controller.rb:32
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/notes_controller.rb:32
+Redirected to https://3485f63cf9a442ec86b34ca6de4b2bdf.vfs.cloud9.us-east-2.amazonaws.com/notes/index
+Completed 302 Found in 12ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:21:23 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.6ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.2ms)
+  Rendered _footer.html.erb (5.7ms)
+  Rendered notes/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/notes/index" for 172.73.151.139 at 2019-03-19 05:21:56 +0000
+Cannot render console from 172.73.151.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Rendered _header.html.erb (2.2ms)
+  Rendered _image_container.html.erb (1.6ms)
+  Rendered _notes_container.html.erb (0.7ms)
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/_notes_list.html.erb:2
+  Rendered _notes_list.html.erb (2.3ms)
+  Rendered _footer.html.erb (6.0ms)
+  Rendered notes/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 146ms (Views: 145.4ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "notes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190317224421)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-19 05:22:15.383116"], ["updated_at", "2019-03-19 05:22:15.383116"]]
+  ↳ db/schema.rb:13
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "notes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190317224421)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-19 05:22:15.445754"], ["updated_at", "2019-03-19 05:22:15.445754"]]
+  ↳ db/schema.rb:13
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Update (2.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-03-19 05:22:15.453725"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273

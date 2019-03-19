@@ -3,7 +3,11 @@
         <div class = "note_info">
             <div class = "upper_box">
                 <section class = "id"  >Post: <%= note.id %></section>
-                <section class = "date"><%= note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                <section class = "date">
+                    <%= hour = note.created_at.strftime("%I").to_i #convert hour to integer
+                        hour = hour - 4                            #compensate from UTC to EST
+                        note.created_at.strftime("%b. %d, %Y - #{hour}:%M %p") %>
+                </section>
                 <script>
                     if (note.updated_at > note.created_at) {
                         <section class = "update">Edited: <%= note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>

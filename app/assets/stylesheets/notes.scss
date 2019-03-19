@@ -63,7 +63,7 @@
         }
     }
     >div#company_logos {
-        
+
         >div#logo {
             display: block;
             float: right;
@@ -101,7 +101,7 @@
     background-color: #373536;
     flex-direction: column;
     margin-top: 73px;
-    
+
     div.image_container {
         >.usage {
             z-index: 1;
@@ -122,17 +122,6 @@
                 margin: 0;
             }
         }
-        >.handshake {
-            object-fit: cover;
-            object-position: -20% 40%;
-
-            z-index: 0;
-            position: fixed;
-            height: 400px;
-            width: 100%;
-            min-width: 900px;
-        }
-
         >.usage:after {
             z-index: -1;
             opacity: 0.15;
@@ -147,6 +136,16 @@
             content: "";
             filter: drop-shadow(0 0 0.85rem white);
             transform: translate(-50%, -50%);
+        }
+        >.handshake {
+            object-fit: cover;
+            object-position: -20% 40%;
+
+            z-index: 0;
+            position: fixed;
+            height: 400px;
+            width: 100%;
+            min-width: 900px;
         }
     }
     .whitespace_container {
