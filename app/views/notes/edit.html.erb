@@ -2,14 +2,16 @@
 
 <main>
     <body class = "body_index", style="z-index: 2">
-        <%= render 'image_container' %>
+        <%= render './image_container' %>
         <div class = "whitespace_container">
-                <%= form_for :notes, url: edit_note_path(@note), method: :patch do |f| %>
+            <div id = "notes_container">
+                <%= form_for :notes, url: note_path(@note), method: :patch do |f| %>
                     <p>
-                        <%= f.text_area :text %>
+                        <%= f.text_area :text, placeholder: "Click here to update this note..." %>
                         <%= f.submit :update %>
                     </p>
                 <% end %>
+            </div>
         </div>
     </body>  
 </main>

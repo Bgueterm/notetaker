@@ -1,28 +1,47 @@
 <div id = "notes_list">
     <% @note.reverse_each do |note| %>
         <div class = "note_info">
+        <% if note == @note.last %>
+            <div class = "big_divider_line"></div>
+        <% else %>
+            <div class="divider_line"></div>
+        <% end %>
             <div class = "upper_box">
-                <section class = "id"  >Post: <%= note.id %></section>
                 <section class = "date">
-                    <%= hour = note.created_at.strftime("%I").to_i #convert hour to integer
-                        hour = hour - 4                            #compensate from UTC to EST
-                        note.created_at.strftime("%b. %d, %Y - #{hour}:%M %p") %>
+                    <%= def hourmath(hour)
+                            hour = hour - 4
+                            if hour < 0
+                                hour = 12 + hour
+                            end
+                            return hour
+                        end
+                        
+                        if note.created_at == note.updated_at
+                            hour = note.created_at.strftime("%I").to_i #convert hour to integer
+                            hour = hourmath(hour)
+                            note.created_at.strftime("%b. %d, %Y - #{hour}:%M %p")
+                        else
+                            hour = note.updated_at.strftime("%I").to_i
+                            hour = hourmath(hour)
+                            note.updated_at.strftime("%b. %d, %Y - #{hour}:%M %p") 
+                        end %>
                 </section>
-                <script>
-                    if (note.updated_at > note.created_at) {
-                        <section class = "update">Edited: <%= note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
-                    }
-                </script>
-                <section class = "update"><%= button_to 'Update', edit_note_path(note) %></section>
-                <section class = "delete">
-                    <%= button_to 'Delete',
+                <section class = "id"  >Note <%= note.id %>
+                    <%= if note.created_at < note.updated_at
+                            "(updated)"
+                        end %>
+                </section>
+                <section class = "buttons">
+                    <section class = "update"><%= button_to 'Update', edit_note_url(note), method: :get %></section>
+                    <section class = "delete"><%= button_to 'Delete',
                         note_path(note),
                         method: :delete,
                         data: { 
                             confirm: 'Are you sure?' 
-                        } %>
+                        } %></section>
                 </section>
             </div>
+            <div class="divider_line"></div>
             <p class = "text"><%= note.text %></p>
         </div>
     <% end %>   

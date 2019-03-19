@@ -14,7 +14,7 @@
                             <section class = "update">Edited: <%= @note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
                         }
                     </script>
-                    <section class = "edit"><%= button_to 'Update', note_path(@note) %></section>
+                    <section class = "edit"><%= button_to 'Update', edit_note_path(@note) %></section>
                     <section class = "delete">
                         <%= button_to 'Destroy',
                             note_path(@note),
