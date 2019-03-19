@@ -1,0 +1,34 @@
+<%= render './header' %>
+
+<main>
+    <body class = "body_index", style="z-index: 2">
+        <%= render './image_container' %>
+        <div class = "whitespace_container">
+            <div id = "notes_list">
+            <div class = "note_info">
+                <div class = "upper_box">
+                    <section class = "id"  >Post: <%= @note.id %></section>
+                    <section class = "date"><%= @note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                    <script>
+                        if (<%= @note.updated_at %> > <%= @note.created_at %>) {
+                            <section class = "update">Edited: <%= @note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                        }
+                    </script>
+                    <section class = "edit"><%= button_to 'Update', note_path(@note) %></section>
+                    <section class = "delete">
+                        <%= button_to 'Destroy',
+                            note_path(@note),
+                            method: :delete,
+                            data: { 
+                                confirm: 'Are you sure?' 
+                            } %>
+                    </section>
+                </div>
+                <p class = "text"><%= @note.text %></p>
+            </div>
+            </div>
+        </div>
+    </body>  
+</main>
+
+<%= render './footer' %>

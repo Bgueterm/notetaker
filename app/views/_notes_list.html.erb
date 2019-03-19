@@ -6,9 +6,18 @@
                 <section class = "date"><%= note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
                 <script>
                     if (note.updated_at > note.created_at) {
-                        <section class = "edit">Edited: <%= note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
+                        <section class = "update">Edited: <%= note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
                     }
                 </script>
+                <section class = "edit"><%= button_to 'Edit', edit_note_path(note) %></section>
+                <section class = "delete">
+                    <%= button_to 'Delete',
+                        note_path(note),
+                        method: :delete,
+                        data: { 
+                            confirm: 'Are you sure?' 
+                        } %>
+                </section>
             </div>
             <p class = "text"><%= note.text %></p>
         </div>

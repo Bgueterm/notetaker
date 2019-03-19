@@ -1,7 +1,7 @@
 <div id = "notes_container">
     <%= form_for :notes, url: notes_path do |f| %>
         <p>
-            <%= f.text_area :text, placeholder: "Click here to type new post..." %>
+            <%= f.text_area :text, placeholder: "Click here to type a new note..." %>
             <%= f.submit :submit %>
         </p>
     <% end %>

@@ -3,16 +3,26 @@ class NotesController < ApplicationController
     @note = Note.all
   end
 
+  def show
+    @note = Note.find(params[:id])
+  end
+
   def create
     @note = Note.new(note_params)
-    @note.save
     redirect_to action: "index"
   end
   
   def edit
+    @note = Note.find(params[:id])
   end
 
   def update
+    @note = Note.find(params[:id])
+    if @note.update(note_params)
+      redirect_to action: "index"
+    else
+      render 'edit'
+    end
   end
   
   def destroy

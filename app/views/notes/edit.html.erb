@@ -1,0 +1,17 @@
+<%= render './header' %>
+
+<main>
+    <body class = "body_index", style="z-index: 2">
+        <%= render 'image_container' %>
+        <div class = "whitespace_container">
+                <%= form_for :notes, url: edit_note_path(@note), method: :patch do |f| %>
+                    <p>
+                        <%= f.text_area :text %>
+                        <%= f.submit :update %>
+                    </p>
+                <% end %>
+        </div>
+    </body>  
+</main>
+
+<%= render './footer' %>
