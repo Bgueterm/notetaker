@@ -7,7 +7,6 @@ Rails version is "5.2.2.1"
 To streamline running the app, it is best run in AWS Cloud9.
 
 To run the rails server, navigate to the notetaker directory and execute: rails s
-rails s will start the server.  
 
 To view the server, navigate to "Preview" at the
 top of the Cloud9 environment, then click the "open in external window" button in
