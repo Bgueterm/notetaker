@@ -9,7 +9,9 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new(note_params)
-    redirect_to action: "index"
+    if @note.save
+      redirect_to action: "index"
+    end
   end
   
   def edit
