@@ -5,28 +5,46 @@
         <%= render './image_container' %>
         <div class = "whitespace_container">
             <div id = "notes_list">
-            <div class = "note_info">
-                <div class = "upper_box">
-                    <section class = "id"  >Post: <%= @note.id %></section>
-                    <section class = "date"><%= @note.created_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
-                    <script>
-                        if (<%= @note.updated_at %> > <%= @note.created_at %>) {
-                            <section class = "update">Edited: <%= @note.updated_at.strftime("%b. %d, %Y - %I:%M %p") %></section>
-                        }
-                    </script>
-                    <section class = "edit"><%= button_to 'Update', edit_note_path(@note) %></section>
-                    <section class = "delete">
-                        <%= button_to 'Destroy',
-                            note_path(@note),
-                            method: :delete,
-                            data: { 
-                                confirm: 'Are you sure?' 
-                            } %>
-                    </section>
-                </div>
-                <p class = "text"><%= @note.text %></p>
+        <div class = "note_info">
+            <div class = "big_divider_line"></div>
+            <div class = "upper_box">
+                <section class = "date">
+                    <%= def hourmath(hour)
+                            hour = hour - 4
+                            if hour < 0
+                                hour = 12 + hour
+                            end
+                            return hour
+                        end
+                        
+                        if @note.created_at == @note.updated_at
+                            hour = @note.created_at.strftime("%I").to_i #convert hour to integer
+                            hour = hourmath(hour)
+                            @note.created_at.strftime("%b. %d, %Y - #{hour}:%M %p")
+                        else
+                            hour = @note.updated_at.strftime("%I").to_i
+                            hour = hourmath(hour)
+                            @note.updated_at.strftime("%b. %d, %Y - #{hour}:%M %p") 
+                        end %>
+                </section>
+                <section class = "id"  >Note <%= @note.id %>
+                    <%= if @note.created_at < @note.updated_at
+                            "(updated)"
+                        end %>
+                </section>
+                <section class = "buttons">
+                    <section class = "update"><%= button_to 'Update', edit_note_url(@note), method: :get %></section>
+                    <section class = "delete"><%= button_to 'Delete',
+                        note_path(@note),
+                        method: :delete,
+                        data: { 
+                            confirm: 'Are you sure?' 
+                        } %></section>
+                </section>
             </div>
-            </div>
+            <div class="divider_line"></div>
+            <p class = "text"><%= @note.text %></p>
+        </div>
         </div>
     </body>  
 </main>
